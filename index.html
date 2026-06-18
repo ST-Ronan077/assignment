@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CET138 - Full Stack Development ePortfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Real Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="progress-bar-top" id="progress-bar"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">SKT</div>
+    <nav class="sidebar-nav">
+      <a href="#s0" class="sidebar-link active" data-section="s0"><span class="dot"></span><span class="link-text">Overview</span></a>
+      <a href="#s1" class="sidebar-link active" data-section="s1"><span class="dot"></span><span class="link-text">Full Stack</span></a>
+      <a href="#s2" class="sidebar-link" data-section="s2"><span class="dot"></span><span class="link-text">HTML</span></a>
+      <a href="#s3" class="sidebar-link" data-section="s3"><span class="dot"></span><span class="link-text">CSS</span></a>
+      <a href="#s4" class="sidebar-link" data-section="s4"><span class="dot"></span><span class="link-text">Bootstrap</span></a>
+      <a href="#s5" class="sidebar-link" data-section="s5"><span class="dot"></span><span class="link-text">JavaScript</span></a>
+      <a href="#s6" class="sidebar-link" data-section="s6"><span class="dot"></span><span class="link-text">Afterview</span></a>
+    </nav>
+    <div class="sidebar-footer">END</div>
+  </aside>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <header class="hero fade-in" id="s0">
+      <p class="eyebrow">CET138 - Assignment 1</p>
+      <h1>Full Stack<br>Development</h1>
+      <p class="hero-tagline">Shrawan Kaji Tamrakar - University of Sunderland - 2026</p>
+      <p class="hero-sub">An ePortfolio demonstrating knowledge about Full Stack Development and practical application of HTML, CSS, Bootstrap, and JavaScript - the core technologies of modern full stack web development.</p>
+      <div class="hero-chips">
+        <a href="#s1" class="chip">Full Stack</a>
+        <a href="#s2" class="chip">HTML</a>
+        <a href="#s3" class="chip">CSS</a>
+        <a href="#s4" class="chip">Bootstrap</a>
+        <a href="#s5" class="chip">JavaScript</a>
+      </div>
+    </header>
+
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <!-- ═══════════ SECTION 1 — FULL STACK ═══════════ -->
+    <section class="section fade-in" id="s1">
+      <div class="section-meta">
+        <span class="section-num" style="color: rgb(0, 0, 0);">01</span>
+        <h2>What is full stack development?</h2>
+      </div>
+      <p>Full stack development is about creating <strong>every part</strong> of a website. This means making the things that people see when they use the website and also the behind the scenes work like the server and the database. A full stack developer can handle the project from the beginning to the end. They do not need to wait for other people to finish their parts.</p>
+
+      <p>The term <strong>"stack"</strong> is used to describe all the technologies that are used together to make a website work. It is like a sandwich. Each layer of the sandwich has a job but when you put them all together you get a complete sandwich. The same thing happens with the layers of technology in a website. They all work together to make the website function properly. Full stack development is, about understanding how all these layers work together to make a website.</p>
+      <div class="stack-grid">
+        <div class="stack-card accent-blue">
+          <span class="stack-icon">&#9670;</span>
+          <strong>Frontend</strong>
+          <p>HTML &middot; CSS &middot; JavaScript</p>
+          <p class="stack-note">What the user sees and interacts with in their browser</p>
+        </div>
+        <div class="stack-card accent-green">
+          <span class="stack-icon">&#9670;</span>
+          <strong>Backend</strong>
+          <p>PHP &middot; Node.js &middot; Python</p>
+          <p class="stack-note">Server-side logic - processes requests and enforces business rules</p>
+        </div>
+        <div class="stack-card accent-amber">
+          <span class="stack-icon">&#9670;</span>
+          <strong>Database</strong>
+          <p>MySQL &middot; MongoDB &middot; PostgreSQL</p>
+          <p class="stack-note">Stores and retrieves data persistently, even after the server restarts</p>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">How the three layers connect</h3>
+      <p>When a user visits a website, the browser downloads and renders the <strong>frontend</strong> (HTML, CSS, JavaScript). It gets the HTML and the CSS and the JavaScript. When you do something on the website like log in or buy something the JavaScript sends a message to the <strong>backend</strong> server. The server then does what it needs to do with the message looks at the <strong>database</strong> to get the information and sends the information back to your browser so it can show you what you need to see.</p>
+      <p>For example when you use Netflix the frontend part that you see is made with React.js. This is what you interact with. The backend part, which is made with Node.js is what handles the stuff like who you are and what you like to watch. Then there are databases, like MySQL and Cassandra that store what you have watched and what you like. Every website you use has these three parts: the frontend, the backend and the database. Netflix has these parts. So do other websites. The frontend, the backend and the database all work together to make the website work.</p>
+
+      <h3 class="sub-heading">Common technology stacks</h3>
+      <div class="info-row">
+        <div class="info-pill"><strong>LAMP</strong> - Linux &middot; Apache &middot; MySQL &middot; PHP</div>
+        <div class="info-pill"><strong>MEAN</strong> - MongoDB &middot; Express &middot; Angular &middot; Node.js</div>
+        <div class="info-pill"><strong>MERN</strong> - MongoDB &middot; Express &middot; React &middot; Node.js</div>
+      </div>
+      <p>Each stack uses different technologies for each layer but follows the same frontend-backend-database pattern. The LAMP stack is particularly common for PHP-based websites, and is what this module focuses on.</p>
+    </section>
+
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <!-- ═══════════ SECTION 2 — HTML ═══════════ -->
+    <section class="section fade-in" id="s2">
+      <div class="section-meta">
+        <span class="section-num" style="color: rgb(0, 0, 0);">02</span>
+        <h2>HTML</h2>
+      </div>
+
+      <p>HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It is the skeleton of every webpage - it defines <strong>what content appears</strong> and what type it is (heading, paragraph, list, image, link), but not how it looks visually (that is CSS's job).</p>
+      <p>HTML uses a system of <strong>elements</strong> represented by tags. Most elements have an opening tag <span class="tag">&lt;p&gt;</span> and a closing tag <span class="tag">&lt;/p&gt;</span>, with content in between. Tags can also have <strong>attributes</strong> - like <span class="tag">href</span> on a link or <span class="tag">src</span> on an image - which provide extra information about the element.</p>
+
+      <h3 class="sub-heading">Example 1 - page structure &amp; core elements</h3>
+      <p>The preview below shows the most fundamental HTML elements: headings create a content hierarchy (<span class="tag">h1</span> is the most important, <span class="tag">h3</span> is less important), <span class="tag">p</span> wraps paragraphs of text, <span class="tag">ul</span> and <span class="tag">li</span> create bullet-point lists, and <span class="tag">a</span> with a <span class="tag">href</span> attribute creates a clickable hyperlink. Together these tags structure almost every page on the web.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live preview — core HTML elements</span>
+        </div>
+        <div class="demo-body">
+          <h3 class="preview-h3">About me</h3>
+          <p class="preview-p">I am a full stack development student at the University of Sunderland, learning to build modern, responsive web applications from the ground up using HTML, CSS, Bootstrap, and JavaScript.</p>
+          <p class="preview-label">My skills include:</p>
+          <ul class="preview-list">
+            <li>HTML &mdash; structuring and marking up web content</li>
+            <li>CSS &mdash; styling and creating page layouts</li>
+            <li>Bootstrap &mdash; building responsive interfaces quickly</li>
+            <li>JavaScript &mdash; adding interactivity and logic</li>
+          </ul>
+          <a href="https://github.com/ST-Ronan077/planetary" class="preview-link" target="_blank">View my GitHub projects &rarr;</a>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-comment">&lt;!-- Heading hierarchy --&gt;</span>
+<span class="c-tag">&lt;h1&gt;</span>About me<span class="c-tag">&lt;/h1&gt;</span>
+<span class="c-tag">&lt;h2&gt;</span>My background<span class="c-tag">&lt;/h2&gt;</span>
+<span class="c-tag">&lt;h3&gt;</span>Current studies<span class="c-tag">&lt;/h3&gt;</span>
+
+<span class="c-comment">&lt;!-- Paragraph of text --&gt;</span>
+<span class="c-tag">&lt;p&gt;</span>I am a full stack development student at the University of Sunderland.<span class="c-tag">&lt;/p&gt;</span>
+
+<span class="c-comment">&lt;!-- Unordered list with list items --&gt;</span>
+<span class="c-tag">&lt;ul&gt;</span>
+  <span class="c-tag">&lt;li&gt;</span>HTML - structuring web content<span class="c-tag">&lt;/li&gt;</span>
+  <span class="c-tag">&lt;li&gt;</span>CSS - styling and layouts<span class="c-tag">&lt;/li&gt;</span>
+  <span class="c-tag">&lt;li&gt;</span>JavaScript - interactivity<span class="c-tag">&lt;/li&gt;</span>
+<span class="c-tag">&lt;/ul&gt;</span>
+
+<span class="c-comment">&lt;!-- Hyperlink — href attribute sets the destination --&gt;</span>
+<span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-str">"https://github.com"</span> <span class="c-attr">target</span>=<span class="c-str">"_blank"</span><span class="c-tag">&gt;</span>View my GitHub &rarr;<span class="c-tag">&lt;/a&gt;</span></code></pre>
+
+      <h3 class="sub-heading">Example 2 - HTML form elements</h3>
+      <p>Forms are essential in web development - they collect data from users and send it to a server. The <span class="tag">&lt;form&gt;</span> element wraps all inputs. Each <span class="tag">&lt;input&gt;</span> has a <span class="tag">type</span> attribute that controls what is accepted: <span class="tag">type="text"</span> for plain text, <span class="tag">type="email"</span> validates email format, <span class="tag">type="password"</span> masks input. The <span class="tag">&lt;label&gt;</span> element links descriptive text to an input using matching <span class="tag">for</span> and <span class="tag">id</span> attributes, which is important for accessibility. The <span class="tag">required</span> attribute prevents the form from submitting if a field is empty.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live preview - HTML contact form</span>
+        </div>
+        <div class="demo-body">
+          <form class="html-form" onsubmit="handleFormSubmit(event)">
+            <div class="html-form-group">
+              <label class="html-label" for="demo-name">Full name</label>
+              <input class="html-input" type="text" id="demo-name" placeholder="Enter your full name" required />
+            </div>
+            <div class="html-form-group">
+              <label class="html-label" for="demo-email">Email address</label>
+              <input class="html-input" type="email" id="demo-email" placeholder="Enter your email address" required />
+            </div>
+            <div class="html-form-group">
+              <label class="html-label" for="demo-msg">Message</label>
+              <textarea class="html-input" id="demo-msg" rows="3" placeholder="Your message here..."></textarea>
+            </div>
+            <button class="html-btn" type="submit">Send message</button>
+            <p id="form-feedback" style="margin-top:8px;font-size:13px;color:#16a34a;display:none;">Form submitted successfully!</p>
+          </form>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-comment">&lt;!-- Form with action (where data goes) and method (how it's sent) --&gt;</span>
+<span class="c-tag">&lt;form</span> <span class="c-attr">action</span>=<span class="c-str">"/submit"</span> <span class="c-attr">method</span>=<span class="c-str">"POST"</span><span class="c-tag">&gt;</span>
+
+  <span class="c-comment">&lt;!-- label 'for' matches input 'id' for accessibility --&gt;</span>
+  <span class="c-tag">&lt;label</span> <span class="c-attr">for</span>=<span class="c-str">"name"</span><span class="c-tag">&gt;</span>Full name<span class="c-tag">&lt;/label&gt;</span>
+  <span class="c-tag">&lt;input</span> <span class="c-attr">type</span>=<span class="c-str">"text"</span> <span class="c-attr">id</span>=<span class="c-str">"name"</span> <span class="c-attr">name</span>=<span class="c-str">"name"</span> <span class="c-attr">required</span><span class="c-tag">&gt;</span>
+
+  <span class="c-tag">&lt;label</span> <span class="c-attr">for</span>=<span class="c-str">"email"</span><span class="c-tag">&gt;</span>Email address<span class="c-tag">&lt;/label&gt;</span>
+  <span class="c-tag">&lt;input</span> <span class="c-attr">type</span>=<span class="c-str">"email"</span> <span class="c-attr">id</span>=<span class="c-str">"email"</span> <span class="c-attr">name</span>=<span class="c-str">"email"</span> <span class="c-attr">required</span><span class="c-tag">&gt;</span>
+
+  <span class="c-tag">&lt;label</span> <span class="c-attr">for</span>=<span class="c-str">"msg"</span><span class="c-tag">&gt;</span>Message<span class="c-tag">&lt;/label&gt;</span>
+  <span class="c-tag">&lt;textarea</span> <span class="c-attr">id</span>=<span class="c-str">"msg"</span> <span class="c-attr">name</span>=<span class="c-str">"message"</span> <span class="c-attr">rows</span>=<span class="c-str">"4"</span><span class="c-tag">&gt;&lt;/textarea&gt;</span>
+
+  <span class="c-tag">&lt;button</span> <span class="c-attr">type</span>=<span class="c-str">"submit"</span><span class="c-tag">&gt;</span>Send message<span class="c-tag">&lt;/button&gt;</span>
+
+<span class="c-tag">&lt;/form&gt;</span></code></pre>
+     <p>HTML is really easy to use because it only talks about <em>what's in the content</em> not what it looks like. This means that the way things are organized and the way things look are two things (structure from style). This is an important idea when it comes to making websites. The same HTML page can look totally different depending on the CSS that is used with it. HTML is simple. That is what makes it so useful. The HTML document and the CSS are like two things the HTML document says what is, in it and the CSS says how it should look.</p>
+    </section>
+
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <!-- ═══════════ SECTION 3 — CSS ═══════════ -->
+    <section class="section fade-in" id="s3">
+      <div class="section-meta">
+        <span class="section-num" style="color: rgb(0, 0, 0);">03</span>
+        <h2>CSS</h2>
+      </div>
+
+      <p>CSS (Cascading Style Sheets) controls the <strong>visual presentation</strong> of HTML content. Where HTML defines the structure, CSS defines the appearance - colours, typography, spacing, layout, animations, and responsive behaviour. Without CSS, every webpage would look like a plain text document.</p>
+      <p>CSS works by <strong>selecting</strong> HTML elements and applying style declarations to them. A CSS rule looks like: <span class="tag">selector { property: value; }</span>. The "cascading" in CSS means styles flow downward - parent element styles are inherited by children, and more specific rules override less specific ones.</p>
+
+      <h3 class="sub-heading">Example 1 - flexbox layout &amp; profile card</h3>
+      <p>Flexbox is CSS's most powerful layout tool. Setting <span class="tag">display: flex</span> on a container turns its children into flexible items that can be aligned, spaced, and ordered with simple properties. <span class="tag">align-items: center</span> vertically centres all children, <span class="tag">gap</span> adds consistent spacing between them, and <span class="tag">flex: 1</span> on a child makes it grow to fill available space. The <span class="tag">border-radius: 50%</span> on the avatar turns a square div into a perfect circle.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live preview - CSS flexbox profile card</span>
+        </div>
+        <div class="demo-body">
+          <div class="profile-card">
+            <div class="avatar">SKT</div>
+            <div class="profile-info">
+              <p class="profile-name">Shrawan Kaji Tamrakar</p>
+              <p class="profile-role">Full Stack Development Student - University of Sunderland</p>
+            </div>
+            <span class="badge-active">Active</span>
+          </div>
+          <div class="css-props">
+            <div class="css-prop"><span class="prop-key">display</span><span class="prop-val">flex</span></div>
+            <div class="css-prop"><span class="prop-key">align-items</span><span class="prop-val">center</span></div>
+            <div class="css-prop"><span class="prop-key">gap</span><span class="prop-val">14px</span></div>
+            <div class="css-prop"><span class="prop-key">border-radius</span><span class="prop-val">50%</span></div>
+            <div class="css-prop"><span class="prop-key">flex</span><span class="prop-val">1</span></div>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-sel">.profile-card</span> {
+  <span class="c-prop">display</span>: <span class="c-val">flex</span>;           <span class="c-comment">/* activate flexbox layout */</span>
+  <span class="c-prop">align-items</span>: <span class="c-val">center</span>;    <span class="c-comment">/* vertically centre all children */</span>
+  <span class="c-prop">gap</span>: <span class="c-val">14px</span>;             <span class="c-comment">/* space between items */</span>
+  <span class="c-prop">padding</span>: <span class="c-val">16px</span>;
+  <span class="c-prop">background</span>: <span class="c-val">#f7f7f7</span>;
+  <span class="c-prop">border-radius</span>: <span class="c-val">12px</span>;    <span class="c-comment">/* rounded corners */</span>
+}
+
+<span class="c-sel">.avatar</span> {
+  <span class="c-prop">width</span>: <span class="c-val">44px</span>;
+  <span class="c-prop">height</span>: <span class="c-val">44px</span>;
+  <span class="c-prop">border-radius</span>: <span class="c-val">50%</span>;     <span class="c-comment">/* turns square div into a circle */</span>
+  <span class="c-prop">background</span>: <span class="c-val">#dbeafe</span>;
+}
+
+<span class="c-sel">.profile-info</span> {
+  <span class="c-prop">flex</span>: <span class="c-val">1</span>;               <span class="c-comment">/* grows to fill remaining space */</span>
+}</code></pre>
+
+      <h3 class="sub-heading">Example 2 - hover transitions &amp; responsive grid</h3>
+      <p>CSS <span class="tag">transition</span> creates smooth animations between states automatically - no JavaScript needed. When a user hovers over a card, the browser animates between the normal and <span class="tag">:hover</span> state over the specified duration. The <span class="tag">transform: translateY(-4px)</span> shifts the card upward, creating a "lift" effect. The <span class="tag">@media</span> query changes the layout at screen widths below 600px, making the grid stack into a single column on mobile devices.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live preview - hover &amp; resize window to see responsive</span>
+        </div>
+        <div class="demo-body">
+          <div class="hover-cards">
+            <div class="hover-card"><p class="hc-num">01</p><p class="hc-label">HTML</p></div>
+            <div class="hover-card"><p class="hc-num">02</p><p class="hc-label">CSS</p></div>
+            <div class="hover-card"><p class="hc-num">03</p><p class="hc-label">JavaScript</p></div>
+          </div>
+          <p class="demo-note">Hover each card &uarr; to see CSS transitions. Resize the window to see the responsive grid.</p>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-sel">.card</span> {
+  <span class="c-prop">background</span>: <span class="c-val">#f7f7f7</span>;
+  <span class="c-prop">padding</span>: <span class="c-val">20px</span>;
+  <span class="c-prop">border-radius</span>: <span class="c-val">10px</span>;
+  <span class="c-prop">transition</span>: <span class="c-val">transform 0.2s ease, background 0.2s ease</span>;
+}
+
+<span class="c-comment">/* :hover fires when the mouse is over the element */</span>
+<span class="c-sel">.card:hover</span> {
+  <span class="c-prop">transform</span>: <span class="c-val">translateY(-4px)</span>; <span class="c-comment">/* lifts card upward */</span>
+  <span class="c-prop">background</span>: <span class="c-val">#111</span>;
+  <span class="c-prop">color</span>: <span class="c-val">#fff</span>;
+}
+
+<span class="c-comment">/* Media query: applies only below 600px (mobile screens) */</span>
+<span class="c-sel">@media (max-width: 600px)</span> {
+  <span class="c-sel">.grid</span> {
+    <span class="c-prop">grid-template-columns</span>: <span class="c-val">1fr</span>; <span class="c-comment">/* one column on mobile */</span>
+  }
+}</code></pre>
+
+      <p>CSS gives developers complete control over visual design while keeping it entirely separate from HTML content. This separation means the same HTML can be restyled instantly just by swapping the CSS file - a concept used by themes and design systems.</p>
+    </section>
+
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <!-- ═══════════ SECTION 4 — BOOTSTRAP ═══════════ -->
+    <section class="section fade-in" id="s4">
+      <div class="section-meta">
+        <span class="section-num" style="color: rgb(0, 0, 0);">04</span>
+        <h2>Bootstrap framework</h2>
+      </div>
+
+      <p>Bootstrap is the world's most popular open-source CSS framework, originally created by developers at Twitter in 2011. It provides a large library of <strong>pre-built, production-ready components</strong> - buttons, navbars, cards, forms, modals, alerts and more - that work by simply adding class names to HTML elements. No custom CSS is required.</p>
+      <p>Bootstrap's defining feature is its <strong>12-column responsive grid system</strong>. By applying classes like <span class="tag">col-md-6</span>, a layout automatically rearranges itself across different screen sizes (desktop, tablet, mobile) using CSS breakpoints. Bootstrap is included in this page via a CDN link in the <span class="tag">&lt;head&gt;</span>, and all examples below use <strong>real Bootstrap 5 classes</strong>.</p>
+
+      <h3 class="sub-heading">Example 1 - Bootstrap responsive grid (real Bootstrap 5)</h3>
+      <p>Bootstrap's grid works on a 12-column system. <span class="tag">col-md-4</span> means "take up 4 of 12 columns on medium screens and above". Three <span class="tag">col-md-4</span> columns together fill all 12 columns. The <span class="tag">row</span> class creates the grid row, <span class="tag">g-3</span> adds gutters (gaps) between columns, and the columns automatically stack vertically on screens smaller than the <span class="tag">md</span> breakpoint (768px). Resize your browser window to see the grid respond.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - real Bootstrap 5 grid (resize window to see it respond)</span>
+        </div>
+        <div class="demo-body">
+          <div class="container-fluid p-0">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="bs-grid-cell"><strong>col-md-4</strong><p>Frontend Layer</p></div>
+              </div>
+              <div class="col-md-4">
+                <div class="bs-grid-cell"><strong>col-md-4</strong><p>Backend Layer</p></div>
+              </div>
+              <div class="col-md-4">
+                <div class="bs-grid-cell"><strong>col-md-4</strong><p>Database Layer</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Example 2 - Bootstrap buttons, badges &amp; alerts (real Bootstrap 5)</h3>
+      <p>Bootstrap components require no custom CSS at all. The class <span class="tag">btn btn-dark</span> produces a styled dark button, <span class="tag">btn-outline-danger</span> produces a red outlined button - the colours, padding, border-radius, hover effects, and focus states are all handled by Bootstrap automatically. <span class="tag">badge bg-success</span> creates a small green label, and <span class="tag">alert alert-info</span> creates a styled notification panel. All of these are responsive and accessible by default.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - real Bootstrap 5 components</span>
+        </div>
+        <div class="demo-body">
+          <p class="demo-section-label">Buttons</p>
+          <div class="d-flex gap-2 flex-wrap mb-4">
+            <button type="button" class="btn btn-dark btn-sm">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+            <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+            <button type="button" class="btn btn-outline-success btn-sm">Success</button>
+            <button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
+          </div>
+          <p class="demo-section-label">Badges</p>
+          <div class="d-flex gap-2 flex-wrap align-items-center mb-4">
+            <span class="badge bg-dark">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-primary">Bootstrap</span>
+            <span class="badge bg-success">JavaScript</span>
+            <span class="badge bg-warning text-dark">In Progress</span>
+          </div>
+          <p class="demo-section-label">Alert</p>
+          <div class="alert alert-success py-2 mb-0" role="alert" style="font-size:14px;">
+            <strong>Bootstrap is loaded!</strong> These are genuine Bootstrap 5 components - no custom CSS needed.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Example 3 - Bootstrap card components (real Bootstrap 5)</h3>
+      <p>Bootstrap's <span class="tag">card</span> component is a versatile content container. It combines a <span class="tag">card-header</span> for titles, <span class="tag">card-body</span> for content (with <span class="tag">card-title</span> and <span class="tag">card-text</span>), and optional footers. Cards inside a Bootstrap grid automatically sit side by side on desktop and stack on mobile. The class <span class="tag">h-100</span> makes both cards equal height regardless of their content.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - real Bootstrap 5 cards inside a grid</span>
+        </div>
+        <div class="demo-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card h-100 bs-card">
+                <div class="card-header bs-card-header">Portfolio project</div>
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size:15px;">CET138 ePortfolio</h5>
+                  <p class="card-text" style="font-size:13px;color:#666;">A full stack portfolio built with HTML, CSS, Bootstrap 5, and JavaScript as part of the CET138 module.</p>
+                  <a href="#" class="btn btn-dark btn-sm">View project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 bs-card">
+                <div class="card-header bs-card-header">Module info</div>
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size:15px;">CET138 Full Stack Development</h5>
+                  <p class="card-text" style="font-size:13px;color:#666;">University of Sunderland &middot; Year 1 &middot; Assignment 1 is worth 30% of the module grade.</p>
+                  <span class="badge bg-success">In progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-comment">&lt;!-- Step 1: Link Bootstrap CSS in &lt;head&gt; --&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">href</span>=<span class="c-str">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"</span>
+      <span class="c-attr">rel</span>=<span class="c-str">"stylesheet"</span><span class="c-tag">&gt;</span>
+
+<span class="c-comment">&lt;!-- Step 2: Use Bootstrap grid --&gt;</span>
+<span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"container"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"row g-3"</span><span class="c-tag">&gt;</span>
+    <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"col-md-4"</span><span class="c-tag">&gt;</span>Frontend<span class="c-tag">&lt;/div&gt;</span>
+    <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"col-md-4"</span><span class="c-tag">&gt;</span>Backend<span class="c-tag">&lt;/div&gt;</span>
+    <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"col-md-4"</span><span class="c-tag">&gt;</span>Database<span class="c-tag">&lt;/div&gt;</span>
+  <span class="c-tag">&lt;/div&gt;</span>
+<span class="c-tag">&lt;/div&gt;</span>
+
+<span class="c-comment">&lt;!-- Bootstrap button --&gt;</span>
+<span class="c-tag">&lt;button</span> <span class="c-attr">class</span>=<span class="c-str">"btn btn-dark"</span><span class="c-tag">&gt;</span>Click me<span class="c-tag">&lt;/button&gt;</span>
+
+<span class="c-comment">&lt;!-- Bootstrap badge --&gt;</span>
+<span class="c-tag">&lt;span</span> <span class="c-attr">class</span>=<span class="c-str">"badge bg-success"</span><span class="c-tag">&gt;</span>Active<span class="c-tag">&lt;/span&gt;</span>
+
+<span class="c-comment">&lt;!-- Bootstrap card --&gt;</span>
+<span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"card"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"card-body"</span><span class="c-tag">&gt;</span>
+    <span class="c-tag">&lt;h5</span> <span class="c-attr">class</span>=<span class="c-str">"card-title"</span><span class="c-tag">&gt;</span>My project<span class="c-tag">&lt;/h5&gt;</span>
+    <span class="c-tag">&lt;p</span> <span class="c-attr">class</span>=<span class="c-str">"card-text"</span><span class="c-tag">&gt;</span>Description here.<span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;/div&gt;</span>
+<span class="c-tag">&lt;/div&gt;</span></code></pre>
+
+      <p>Bootstrap dramatically speeds up development. A responsive layout that would take hours to build from scratch with custom CSS takes minutes with Bootstrap. It also ensures consistency, accessibility, and cross-browser compatibility across all components.</p>
+    </section>
+
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <!-- ═══════════ SECTION 5 — JAVASCRIPT ═══════════ -->
+    <section class="section fade-in" id="s5">
+      <div class="section-meta">
+        <span class="section-num" style="color: rgb(0, 0, 0);">05</span>
+        <h2>JavaScript</h2>
+      </div>
+
+      <p>JavaScript (JS) is the <strong>programming language of the web</strong>. It is the only language that runs natively in every browser, making it unique. While HTML defines structure and CSS defines appearance, JavaScript adds <strong>behaviour and logic</strong> - it makes pages dynamic, interactive, and responsive to user actions without requiring a page reload.</p>
+      <p>JavaScript interacts with the <strong>DOM (Document Object Model)</strong> - the browser's internal tree-like representation of the HTML page. Functions like <span class="tag">document.getElementById()</span> select elements, and properties like <span class="tag">.textContent</span>, <span class="tag">.innerHTML</span>, and <span class="tag">.classList</span> allow those elements to be read or modified in real time.</p>
+
+      <h3 class="sub-heading">Example 1 - interactive counter with DOM manipulation</h3>
+      <p>This counter demonstrates four core JavaScript concepts working together. A <strong>variable</strong> (<span class="tag">let count</span>) stores the current number in memory. A <strong>function</strong> (<span class="tag">changeCount</span>) is a reusable named block of code. When a button is clicked, the function runs, updates the variable, and then uses <span class="tag">getElementById</span> to find the display element in the DOM and sets its <span class="tag">textContent</span> to the new value — updating the page instantly without any reload.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - interactive counter</span>
+        </div>
+        <div class="demo-body">
+          <div class="counter-wrap">
+            <button class="counter-btn" onclick="changeCount(-1)" aria-label="Decrease">&#8722;</button>
+            <span id="counter-val">0</span>
+            <button class="counter-btn" onclick="changeCount(1)" aria-label="Increase">&#43;</button>
+          </div>
+          <div style="text-align:center;margin-top:10px;">
+            <button class="btn-reset" onclick="resetCount()">Reset to zero</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Example 2 - form validation with conditional logic</h3>
+      <p>JavaScript validation checks user input <strong>before</strong> it is sent to the server, saving bandwidth and giving instant feedback. The <span class="tag">.value.trim()</span> chain reads the input's value and removes surrounding whitespace. The <span class="tag">.includes('@')</span> method checks whether the email string contains an @ symbol. The <span class="tag">if / else if / else</span> chain evaluates the conditions in order and executes the first branch that matches. Finally, the DOM output element's <span class="tag">textContent</span> and <span class="tag">className</span> are updated to show colour-coded feedback.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - form validation with error states</span>
+        </div>
+        <div class="demo-body">
+          <div class="val-form">
+            <div class="val-group">
+              <label class="val-label">Full name</label>
+              <input id="val-name" type="text" class="form-input" placeholder="Enter your full name" />
+            </div>
+            <div class="val-group">
+              <label class="val-label">Email address</label>
+              <input id="val-email" type="text" class="form-input" placeholder="Enter a valid email (must contain @)" />
+            </div>
+            <button class="btn-primary-full" onclick="validateForm()">Validate &amp; Submit</button>
+            <div id="val-output" style="margin-top:10px;font-size:13px;min-height:20px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Example 3 - dark/light theme toggle with classList</h3>
+      <p>This example shows a pattern used across real websites like Twitter and GitHub. JavaScript's <span class="tag">classList.toggle()</span> adds a class if it is absent, or removes it if it is present - with a single line of code. The CSS file defines a <span class="tag">.dark</span> class with different colours; JavaScript just switches it on and off. The button text is also updated to reflect the current state. This demonstrates how JavaScript and CSS work together - JavaScript changes state, CSS defines what each state looks like.</p>
+
+      <div class="demo-box">
+        <div class="demo-header">
+          <span class="demo-dots"><span></span><span></span><span></span></span>
+          <span class="demo-title">Live - dark/light theme toggle</span>
+        </div>
+        <div class="demo-body">
+          <div id="theme-box" class="theme-box light">
+            <div class="theme-top">
+              <span id="theme-label" class="theme-label">&#9788; Light mode</span>
+              <button id="theme-btn" class="theme-toggle-btn" onclick="toggleTheme()">Switch to dark</button>
+            </div>
+            <p class="theme-text">JavaScript toggles a CSS class on this box to swap between light and dark mode instantly. Click the button to see <span class="tag">classList.toggle()</span> in action - no page reload, no flicker.</p>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code-block"><code><span class="c-comment">// ── Example 1: Counter ─────────────────────────</span>
+<span class="c-kw">let</span> count = <span class="c-num">0</span>; <span class="c-comment">// variable stored in memory</span>
+
+<span class="c-kw">function</span> <span class="c-fn">changeCount</span>(n) {
+  count += n; <span class="c-comment">// update variable</span>
+  document.<span class="c-fn">getElementById</span>(<span class="c-str">'counter-val'</span>).textContent = count;
+  <span class="c-comment">// ↑ find element in DOM, update its text</span>
+}
+
+<span class="c-kw">function</span> <span class="c-fn">resetCount</span>() {
+  count = <span class="c-num">0</span>;
+  document.<span class="c-fn">getElementById</span>(<span class="c-str">'counter-val'</span>).textContent = <span class="c-num">0</span>;
+}
+
+<span class="c-comment">// ── Example 2: Form validation ─────────────────</span>
+<span class="c-kw">function</span> <span class="c-fn">validateForm</span>() {
+  <span class="c-kw">const</span> name  = document.<span class="c-fn">getElementById</span>(<span class="c-str">'val-name'</span>).value.<span class="c-fn">trim</span>();
+  <span class="c-kw">const</span> email = document.<span class="c-fn">getElementById</span>(<span class="c-str">'val-email'</span>).value.<span class="c-fn">trim</span>();
+  <span class="c-kw">const</span> out   = document.<span class="c-fn">getElementById</span>(<span class="c-str">'val-output'</span>);
+
+  <span class="c-kw">if</span> (!name) {
+    out.textContent = <span class="c-str">'Please enter your name.'</span>;
+  } <span class="c-kw">else if</span> (!email.<span class="c-fn">includes</span>(<span class="c-str">'@'</span>)) {
+    out.textContent = <span class="c-str">'Please enter a valid email address.'</span>;
+  } <span class="c-kw">else</span> {
+    out.textContent = <span class="c-str">'Success! Hello, '</span> + name + <span class="c-str">'.'</span>;
+  }
+}
+
+<span class="c-comment">// ── Example 3: Theme toggle ────────────────────</span>
+<span class="c-kw">function</span> <span class="c-fn">toggleTheme</span>() {
+  <span class="c-kw">const</span> box    = document.<span class="c-fn">getElementById</span>(<span class="c-str">'theme-box'</span>);
+  <span class="c-kw">const</span> isDark = box.classList.<span class="c-fn">toggle</span>(<span class="c-str">'dark'</span>); <span class="c-comment">// adds/removes class</span>
+  document.<span class="c-fn">getElementById</span>(<span class="c-str">'theme-btn'</span>).textContent =
+    isDark ? <span class="c-str">'Switch to light'</span> : <span class="c-str">'Switch to dark'</span>;
+  document.<span class="c-fn">getElementById</span>(<span class="c-str">'theme-label'</span>).textContent =
+    isDark ? <span class="c-str">'&#9790; Dark mode'</span> : <span class="c-str">'&#9788; Light mode'</span>;
+}</code></pre>
+
+      <p>JavaScript is what transforms a static HTML/CSS page into a full application. On the frontend it powers interactivity; on the backend (via Node.js) it can handle server requests and database queries - making it the only language capable of covering the entire full stack on its own.</p>
+    </section>
+    <div style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
+
+    <footer>
+      <span style="color: #6c757d;">CET138 Full Stack Development</span>
+      <span class="footer-dot">&middot;</span>
+      <span style="color: #6c757d;">Assignment 1 - ePortfolio</span>
+      <span class="footer-dot">&middot;</span>
+      <span style="color: #6c757d;"> Shrawan Kaji Tamrakar - 2026 </span>
+    </footer>
+<section class="section fade-in" id="s6"></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
